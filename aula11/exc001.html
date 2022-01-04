@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUAL PAÍS?</title>
+    <style>
+        body {
+            background-color: rgb(158, 106, 206);
+            color: white;
+            font: normal 16pt Arial;
+        }
+        input#button {
+            background-color: rgb(39, 187, 51);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 8rem;
+            border: 0;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        input#button:hover{
+            background-color: rgb(33, 151, 43);
+        }
+        input#txtpais {
+            height: 50px;
+            border-radius: 0.8rem;
+            border: solid 2px rgb(39, 187, 51);
+            color: rgb(158, 106, 206);
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual país você é?</h1>
+    Sou do país: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" id="button" onclick="nacionalidade()">
+    <div id="res"></div>
+    <script>
+        function nacionalidade() {
+            var txtp = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#res')
+            var pais = txtp.value
+            res.innerHTML = `<p>Vivendo em <strong>${pais}</strong></p>`
+            if (pais != 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>Estrangeiro</strong></p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

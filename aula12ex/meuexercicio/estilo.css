@@ -1,0 +1,70 @@
+body{
+    background: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+div#res {
+    padding-top: 10px;
+}
+
+input {
+    height: 50px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+#botao {
+    width: 80px;
+    border: 0 ;
+    cursor: pointer;
+    background-color: rgb(0, 197, 0);
+    color: white;
+    transition: 0.2s;
+}
+
+#botao:hover {
+    background-color: rgb(1, 141, 1);
+}
+
+#reset {
+    text-decoration: none;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset img {
+    width: 25px;
+    height: 25px;
+    border-radius: 10rem;
+}
+
+#preencher {
+    display: flex;
+    align-items: center;
+}
+
+#preencher input {
+    margin-right: 10px;
+}

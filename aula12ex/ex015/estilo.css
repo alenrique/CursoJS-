@@ -1,0 +1,51 @@
+body{
+    background: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#foto {
+    border-radius: 10rem;
+    padding-top: 10px;
+}
+
+#botao {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(70, 142, 236);
+    color: white;
+    transition: 0.2s;
+    border: 0;
+    cursor: pointer;
+}
+
+#botao:hover {
+    background-color: rgb(48, 100, 168);
+    transform: translateY(-2px);
+}
+
+#txtano {
+    height: 40px;
+    border-radius: 10px;
+    border: solid 1px rgb(70, 142, 236);
+}
